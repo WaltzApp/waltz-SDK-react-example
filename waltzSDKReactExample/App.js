@@ -18,10 +18,55 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
-  
+    
   _onPressButton() {
     Alert.alert('You tapped the button!')
   }
+  
+  _onLoginPressButton() {
+    var WaltzSDKBridge = require('react-native').NativeModules.WaltzSDKBridge;
+    WaltzSDKBridge.logIn();
+  }
+  
+  _onStartTransactionPressButton() {
+    var WaltzSDKBridge = require('react-native').NativeModules.WaltzSDKBridge;
+    WaltzSDKBridge.beginTransaction();
+  }
+  
+  _onGetUserInfoPressButton() {
+    var WaltzSDKBridge = require('react-native').NativeModules.WaltzSDKBridge;
+    WaltzSDKBridge.getUserInfos();
+  }
+  
+  _onStartGeofencePressButton() {
+    var WaltzSDKBridge = require('react-native').NativeModules.WaltzSDKBridge;
+    WaltzSDKBridge.startGeofenceService();
+  }
+  
+  _onStopGeofencePressButton() {
+    var WaltzSDKBridge = require('react-native').NativeModules.WaltzSDKBridge;
+    WaltzSDKBridge.stopGeofenceService();
+  }
+  
+  _onMyGuestsPressButton() {
+    var WaltzSDKBridge = require('react-native').NativeModules.WaltzSDKBridge;
+    WaltzSDKBridge.getMyGuests();
+  }
+  
+  _onMyInvitationsPressButton() {
+    var WaltzSDKBridge = require('react-native').NativeModules.WaltzSDKBridge;
+    WaltzSDKBridge._onMyInvitationsPressButton();
+  }
+  
+//  _onSendInvitationPressButton() {
+//    var WaltzSDKBridge = require('react-native').NativeModules.WaltzSDKBridge;
+//    WaltzSDKBridge.sendInvitation("iOS SDK first name", lastName: "iOS SDK last name", email: "iossdk@example.com", phoneNumber: "5145457878", startDate: , endDate: );
+//  }
+//
+//  _onInitSDKPressButton() {
+//    var WaltzSDKBridge = require('react-native').NativeModules.WaltzSDKBridge;
+//    WaltzSDKBridge.initManager();xxx
+//  }
   
   render() {
     return (
@@ -31,43 +76,43 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>{instructions}</Text>
         <View style={styles.buttonContainer}>
           <Button
-            onPress={this._onPressButton}
-            title="Login"
+            onPress={this._onLoginPressButton}
+            title="Login4"
           />
         </View>
         <View style={styles.buttonContainer}>
           <Button
-            onPress={this._onPressButton}
+            onPress={this._onStartTransactionPressButton}
             title="Start transaction"
           />
         </View>
         <View style={styles.buttonContainer}>
           <Button
-            onPress={this._onPressButton}
+            onPress={this._onGetUserInfoPressButton}
             title="Get UserInfo"
           />
         </View>
         <View style={styles.buttonContainer}>
           <Button
-            onPress={this._onPressButton}
+            onPress={this._onStartGeofencePressButton}
             title="Start geofence"
           />
         </View>
           <View style={styles.buttonContainer}>
           <Button
-            onPress={this._onPressButton}
+            onPress={this._onStopGeofencePressButton}
             title="Stop geofence"
           />
         </View>
         <View style={styles.buttonContainer}>
           <Button
-            onPress={this._onPressButton}
+            onPress={this._onMyGuestsPressButton}
             title="My guests"
           />
         </View>
         <View style={styles.buttonContainer}>
           <Button
-            onPress={this._onPressButton}
+            onPress={this._onMyInvitationsPressButton}
             title="My invitations"
           />
         </View>

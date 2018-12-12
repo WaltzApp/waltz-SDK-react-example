@@ -27,6 +27,7 @@
 		8A7CA1A821C04BEE000CD5F2 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 8A7CA1A621C04BEE000CD5F2 /* index.js */; };
 		8A7CA1A921C04BEE000CD5F2 /* App.js in Resources */ = {isa = PBXBuildFile; fileRef = 8A7CA1A721C04BEE000CD5F2 /* App.js */; };
 		8A7CA1B021C06AD8000CD5F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CA1AF21C06AD7000CD5F2 /* AppDelegate.swift */; };
+		8A7CA1F021C14FB9000CD5F2 /* WaltzSwiftToObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CA1EF21C14FB9000CD5F2 /* WaltzSwiftToObjC.swift */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
 
@@ -329,6 +330,7 @@
 		8A7CA1A621C04BEE000CD5F2 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = index.js; path = ../index.js; sourceTree = "<group>"; };
 		8A7CA1A721C04BEE000CD5F2 /* App.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = App.js; path = ../App.js; sourceTree = "<group>"; };
 		8A7CA1AF21C06AD7000CD5F2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = waltzSDKReactExample/AppDelegate.swift; sourceTree = "<group>"; };
+		8A7CA1EF21C14FB9000CD5F2 /* WaltzSwiftToObjC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaltzSwiftToObjC.swift; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		FE1E414080A256D9EBD02D06 /* Pods-waltzSDKReactExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waltzSDKReactExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-waltzSDKReactExample/Pods-waltzSDKReactExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -560,6 +562,7 @@
 				8A7CA1A621C04BEE000CD5F2 /* index.js */,
 				8A7CA1A121C047FC000CD5F2 /* WaltzSDKBridge.h */,
 				8A7CA1A221C04834000CD5F2 /* WaltzSDKBridge.m */,
+				8A7CA1EF21C14FB9000CD5F2 /* WaltzSwiftToObjC.swift */,
 			);
 			name = React;
 			sourceTree = "<group>";
@@ -1050,6 +1053,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7CA1F021C14FB9000CD5F2 /* WaltzSwiftToObjC.swift in Sources */,
 				8A7CA1B021C06AD8000CD5F2 /* AppDelegate.swift in Sources */,
 				8A7CA1A321C04834000CD5F2 /* WaltzSDKBridge.m in Sources */,
 			);
